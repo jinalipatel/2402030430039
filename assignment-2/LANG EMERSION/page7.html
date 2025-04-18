@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR vs VR Comparison</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4f4f4; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            position: relative; /* For absolute positioning of the next button */
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 20px;
+            width: 90%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .comparison-section {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .ar-section, .vr-section {
+            flex: 1;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .ar-section {
+            background-color: #e0f7fa; /* Light cyan */
+            margin-right: 10px;
+        }
+
+        .vr-section {
+            background-color: #fce4ec; /* Light pink */
+            margin-left: 10px;
+        }
+
+        .ar-title, .vr-title {
+            font-size: 1.5em;
+            color: #26a69a; /* Teal */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .vr-title {
+            color: #ec407a; /* Pink */
+        }
+
+        .info-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #555;
+            font-size: 0.95em;
+            text-align: left;
+        }
+
+        .image-row {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .next-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #808080; /* Gray button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .next-button:hover {
+            background-color: #666;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .comparison-section {
+                flex-direction: column;
+            }
+            .ar-section, .vr-section {
+                margin: 10px 0;
+            }
+            .image-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container {
+                max-width: 150px;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="comparison-section">
+            <div class="ar-section">
+                <h2 class="ar-title">AR</h2>
+                <ul class="info-list">
+                    <li>User is immersed in a mix of the real world and a virtual world</li>
+                    <li>Interact with both worlds and clearly distinguish between them</li>
+                    <li>Uses a smartphone, tablet, or other mobile device</li>
+                </ul>
+            </div>
+            <div class="vr-section">
+                <h2 class="vr-title">VR</h2>
+                <ul class="info-list">
+                    <li>User is immersed in an entirely virtual world</li>
+                    <li>Hard to differentiate between reality and virtual reality</li>
+                    <li>Uses head-mounted display or glasses</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image-row">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150/26a69a/fff?Text=AR+Device" alt="AR Device">
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150/ec407a/fff?Text=VR+Headset" alt="VR Headset">
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150/26a69a/fff?Text=AR+Interaction" alt="AR Interaction">
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150/ec407a/fff?Text=VR+Interaction" alt="VR Interaction">
+            </div>
+        </div>
+    </div>
+    <a href="#" class="next-button">NEXT</a>
+</body>
+</html>

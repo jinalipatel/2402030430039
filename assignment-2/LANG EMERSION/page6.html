@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training in Virtual Reality</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f9f9f9; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            position: relative; /* For absolute positioning of the next button */
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 20px;
+            width: 90%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align text to the left */
+            position: relative; /* For absolute positioning within container */
+        }
+
+        .header {
+            background: linear-gradient(to right, #673ab7, #3f51b5); /* Purple gradient */
+            color: white;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .header-logo {
+            font-size: 1em;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr;
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .benefit-title {
+            font-weight: bold;
+            color: #333;
+            text-align: left;
+        }
+
+        .benefit-value {
+            color: #4CAF50; /* Green for positive values */
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: left;
+        }
+
+        .benefit-description {
+            color: #777;
+            font-size: 0.9em;
+            text-align: left;
+        }
+
+        .vr-illustration {
+            max-width: 200px;
+            align-self: center;
+            margin-left: auto;
+        }
+
+        .vr-illustration img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .next-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #808080; /* Gray button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .next-button:hover {
+            background-color: #666;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .benefits-grid {
+                grid-template-columns: 1fr; /* Stack on smaller screens */
+            }
+            .vr-illustration {
+                display: none; /* Hide illustration on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header-title">Training in Virtual Reality</h1>
+            <div class="header-logo">ArborXR</div>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-title">Saves Time</div>
+            <div class="benefit-value">+40%</div>
+            <div class="benefit-description">Reduces enterprise training time by up to 40%</div>
+
+            <div class="benefit-title"></div>
+            <div class="benefit-value">4x faster</div>
+            <div class="benefit-description">VR training is up to 4x faster than traditional classroom learning</div>
+
+            <div class="benefit-title"></div>
+            <div class="benefit-value">50-70%</div>
+            <div class="benefit-description">Reduces time to proficiency by 50-70%</div>
+
+            <div class="benefit-title">Increases Engagement</div>
+            <div class="benefit-value">3.75x</div>
+            <div class="benefit-description">Learners are 3.75x more emotionally connected to content</div>
+
+            <div class="benefit-title"></div>
+            <div class="benefit-value">4x</div>
+            <div class="benefit-description">Learners are 4x more focused than traditional learning</div>
+
+            <div class="benefit-title">Improves Retention</div>
+            <div class="benefit-value">16x <span>likely</span></div>
+            <div class="benefit-description">Users are 16x more likely to recall information compared to traditional methods</div>
+
+            <div class="benefit-title"></div>
+            <div class="benefit-value">275% <span>confident</span></div>
+            <div class="benefit-description">275% more confident applying skills learned with VR training</div>
+
+            <div class="benefit-title">Saves Money</div>
+            <div class="benefit-value">Cost-effective</div>
+            <div class="benefit-description">Studies show that VR training is more cost-effective than traditional training methods</div>
+
+            <div class="benefit-title"></div>
+            <div class="benefit-value">30-70%</div>
+            <div class="benefit-description">VR training can save between 30-70% in training costs compared to traditional methods</div>
+
+            <div class="benefit-title">Enhances Safety</div>
+            <div class="benefit-value">43% reduction</div>
+            <div class="benefit-description">Virtual reality training reduces time lost to injury by 43%</div>
+
+            <div class="benefit-title"></div>
+            <div class="benefit-value">230%</div>
+            <div class="benefit-description">VR training improves quality of performance by 230%</div>
+        </div>
+        <div class="vr-illustration">
+            <img src="https://via.placeholder.com/200x300/800080/fff?Text=VR+User" alt="VR User Illustration">
+        </div>
+    </div>
+    <a href="#" class="next-button">NEXT</a>
+</body>
+</html>

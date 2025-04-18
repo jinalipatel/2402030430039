@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Reality Infographics</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f0f0f0; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            position: relative; /* For absolute positioning of the next button */
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            width: 90%;
+            max-width: 960px;
+            display: flex;
+            flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+            justify-content: space-around; /* Distribute space between infographic and illustration */
+            align-items: flex-start; /* Align items to the top */
+        }
+
+        .infographic {
+            flex: 1 1 500px; /* Minimum width of 500px, grows and shrinks */
+            margin-bottom: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .infographic img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .illustration {
+            flex: 1 1 300px; /* Minimum width of 300px, grows and shrinks */
+            margin-left: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .illustration img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .next-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #6c757d; /* Gray button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .next-button:hover {
+            background-color: #5a6268;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack infographic and illustration on smaller screens */
+                align-items: center;
+            }
+            .illustration {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="infographic">
+            <img src="https://via.placeholder.com/600x800/87CEEB/fff?Text=Virtual+Reality+Infographics" alt="Virtual Reality Infographics">
+        </div>
+        <div class="illustration">
+            <img src="https://via.placeholder.com/400x600/DDA0DD/fff?Text=VR+Illustration" alt="VR Illustration">
+        </div>
+    </div>
+    <a href="#" class="next-button">NEXT</a>
+</body>
+</html>

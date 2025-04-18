@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR vs AR</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f0f0f0; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            position: relative; /* For absolute positioning of the next button */
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 20px;
+            width: 90%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align text to the left */
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr;
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .category {
+            font-weight: bold;
+            color: #333;
+            text-align: left;
+        }
+
+        .vr-box, .ar-box {
+            background-color: #dbeeff; /* Light blue background for boxes */
+            border-radius: 6px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .vr-title, .ar-title {
+            font-weight: bold;
+            color: #4682b4; /* Steel blue title */
+            margin-bottom: 10px;
+        }
+
+        .vr-list, .ar-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .next-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #808080; /* Gray button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .next-button:hover {
+            background-color: #666;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr; /* Stack on smaller screens */
+            }
+            .vr-box, .ar-box {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="comparison-grid">
+            <div class="category"></div>
+            <div class="category vr-title">Virtual Reality</div>
+            <div class="category ar-title">Augmented Reality</div>
+
+            <div class="category">Environment</div>
+            <div class="vr-box">
+                <ul class="vr-list">
+                    <li>Fully immersive, replacing the real world with a simulated one.</li>
+                </ul>
+            </div>
+            <div class="ar-box">
+                <ul class="ar-list">
+                    <li>Partially immersive, enhancing the real world with digital elements.</li>
+                </ul>
+            </div>
+
+            <div class="category">Immersion</div>
+            <div class="vr-box">
+                <ul class="vr-list">
+                    <li>Highly Immersive, users experience a completely artificial environment.</li>
+                </ul>
+            </div>
+            <div class="ar-box">
+                <ul class="ar-list">
+                    <li>Less immersive, users perceive a blend of the real and virtual worlds.</li>
+                </ul>
+            </div>
+
+            <div class="category">Interaction</div>
+            <div class="vr-box">
+                <ul class="vr-list">
+                    <li>Users interact with the virtual environment through controllers, hand gestures, or voice commands.</li>
+                </ul>
+            </div>
+            <div class="ar-box">
+                <ul class="ar-list">
+                    <li>Users can interact with digital content overlaid on the real world using touch, gestures, or voice.</li>
+                </ul>
+            </div>
+
+            <div class="category">Devices</div>
+            <div class="vr-box">
+                <ul class="vr-list">
+                    <li>VR headsets (e.g., Oculus, HTC Vive, PlayStation VR), controllers, haptic feedback devices.</li>
+                </ul>
+            </div>
+            <div class="ar-box">
+                <ul class="ar-list">
+                    <li>Smartphones, tablets, AR glasses (e.g., Microsoft HoloLens, Google Glass).</li>
+                </ul>
+            </div>
+
+            <div class="category">User experience</div>
+            <div class="vr-box">
+                <ul class="vr-list">
+                    <li>Offers a deeply engaging and isolated experience.</li>
+                </ul>
+            </div>
+            <div class="ar-box">
+                <ul class="ar-list">
+                    <li>Provides an interactive and connected experience, blending the real and virtual worlds.</li>
+                </ul>
+            </div>
+
+            <div class="category">Privacy concerns</div>
+            <div class="vr-box">
+                <ul class="vr-list">
+                    <li>Generally fewer privacy concerns as users are in a controlled, virtual environment.</li>
+                </ul>
+            </div>
+            <div class="ar-box">
+                <ul class="ar-list">
+                    <li>Potential privacy concerns due to the need to capture and process real-world data.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="next-button">NEXT</a>
+</body>
+</html>

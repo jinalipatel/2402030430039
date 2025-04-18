@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Virtual Reality</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f0f0f0; /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            position: relative; /* For absolute positioning of the next button */
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 20px;
+            width: 90%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* For positioning "THANK YOU!!" */
+        }
+
+        .image-container {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .thank-you-text {
+            background-color: #e0e0e0; /* Light gray background for text */
+            color: #333;
+            font-size: 2em;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .next-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #808080; /* Gray button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .next-button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x400/87CEEB/fff?Text=VR+User+Interface" alt="VR User Interface">
+        </div>
+        <div class="thank-you-text">THANK YOU!!</div>
+    </div>
+    <a href="#" class="next-button">NEXT</a>
+</body>
+</html>
